@@ -1,0 +1,10 @@
+# [actions生成md文件异常](https://github.com/Smileye-v/gitblog/issues/5)
+
+测试
+
+---
+
+![image](https://user-images.githubusercontent.com/68359161/226306607-2738eea5-f6e4-4ac4-8523-e9915c869aca.png)
+报403错误，提示没有权限
+修改权限为可读写后执行正常
+![image](https://user-images.githubusercontent.com/68359161/226306805-604b747f-525f-44fb-ac11-d43c3d9b1dfc.png)
