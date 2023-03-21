@@ -1,5 +1,41 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/Smileye-v/gitblog</id><title>RSS feed of Smileye-v's gitblog</title><updated>2023-03-21T06:34:21.005007+00:00</updated><author><name>meimaolu</name><email>meimaolu@163.com</email></author><link href="https://github.com/Smileye-v/gitblog"/><link href="https://raw.githubusercontent.com/Smileye-v/gitblog/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/Smileye-v/gitblog/issues/10</id><title>beautyEye输入框中文输入法白屏</title><updated>2023-03-21T06:34:21.544809+00:00</updated><content type="html"><![CDATA[<p>在使用Java Swing编写程序时引用beautyEye以修改样式，但在使用输入框时，输入中文窗口就出现白屏。
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/Smileye-v/gitblog</id><title>RSS feed of Smileye-v's gitblog</title><updated>2023-03-21T06:36:30.705298+00:00</updated><author><name>meimaolu</name><email>meimaolu@163.com</email></author><link href="https://github.com/Smileye-v/gitblog"/><link href="https://raw.githubusercontent.com/Smileye-v/gitblog/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><entry><id>https://github.com/Smileye-v/gitblog/issues/11</id><title>Java JFileChooser保存文件</title><updated>2023-03-21T06:36:31.188450+00:00</updated><content type="html"><![CDATA[<pre><code>//创建文件选择器
+JFileChooser fileChooser = new JFileChooser();
+//后缀名过滤器
+FileNameExtensionFilter filter = new FileNameExtensionFilter(&quot;标签文件(*.txt)&quot;, &quot;txt&quot;);
+fileChooser.setFileFilter(filter);
+// 在容器上打开文件选择器	
+fileChooser.showSaveDialog(jf);
+File f=fileChooser.getSelectedFile();
+//字节输出流
+FileOutputStream fos = null;
+	try {
+			String fname = f.getName();//从文件名输入框中获取文件名
+			//创建文件
+			File file=new File(fileChooser.getCurrentDirectory()+&quot;/&quot;+fname+&quot;.txt&quot;);
+			fos = new FileOutputStream(file);
+			//写入文件操作
+			String Datas = proDatas.toString();
+			fos.write(Datas.getBytes());
+			fos.close();
+
+		} catch (IOException e1) {
+					System.err.println(&quot;IO异常&quot;);
+					e1.printStackTrace();
+				}
+
+</code></pre>
+<p>关于从文件输入框获取文件名时，使用fileChooser.getSelectedFile().getName()。但我们是”保存“，并没有选择文件。关于这一点，我引用大佬的解释：</p>
+<blockquote>
+<ol>
+<li>JFileChooser.getSelectedFile()返回一个文件bai对象，调这个文件对象的dugetName()很容易得到用户输入的zhi文件名。返回文dao件对象既包含了文件路径也包含了文件名，这也体现了Java面向对象的思想。</li>
+<li>Java的文件对象在文件系统中是可以存在，也可不存在的，所以Java的文件对象有exists()、createNewFile()、mkdir()等方法。所以文件保存对话框返回的文件对象不一定在文件系统实际存在，而仅仅是一串路径的表示。</li>
+</ol>
+</blockquote>
+<blockquote>
+<p><a href="https://zhidao.baidu.com/question/202631853.html">https://zhidao.baidu.com/question/202631853.html</a></p>
+</blockquote>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/11" rel="alternate"/><category term="技术笔记"/><published>2023-03-21T06:36:06+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/10</id><title>beautyEye输入框中文输入法白屏</title><updated>2023-03-21T06:36:31.355286+00:00</updated><content type="html"><![CDATA[<p>在使用Java Swing编写程序时引用beautyEye以修改样式，但在使用输入框时，输入中文窗口就出现白屏。
 <img src="https://user-images.githubusercontent.com/68359161/226533454-3ccf4247-1a5e-4fec-b108-f1731def2b0f.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/68359161/226533485-7bdbffbe-fb7e-410b-a1aa-a779d360eb10.png" alt="image" /></p>
 <h3>解决方法</h3>
@@ -16,7 +52,7 @@
 		
 	}
 </code></pre>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/10" rel="alternate"/><category term="bug"/><published>2023-03-21T06:33:45+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/9</id><title>Java mousedragged事件时控件闪烁</title><updated>2023-03-21T06:34:21.815675+00:00</updated><content type="html"><![CDATA[<p>在使用Java Swing做程序时，使用MouseMotionListener的mousedragged鼠标事件，但拖动时，元素位置闪烁变化。
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/10" rel="alternate"/><category term="bug"/><published>2023-03-21T06:33:45+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/9</id><title>Java mousedragged事件时控件闪烁</title><updated>2023-03-21T06:36:31.568232+00:00</updated><content type="html"><![CDATA[<p>在使用Java Swing做程序时，使用MouseMotionListener的mousedragged鼠标事件，但拖动时，元素位置闪烁变化。
 <img src="https://user-images.githubusercontent.com/68359161/226532997-45f88329-74f7-4ac4-a409-8576b51abbf1.png" alt="image" />
 输出了位置数值查看发现位置会往左上角“瞬移”。</p>
 <pre><code>import java.awt.event.MouseMotionListener;
@@ -37,7 +73,7 @@ public void mouseDragged(MouseEvent e) {
 }
 </code></pre>
 <p>修改后抖动的问题就没有了。</p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/9" rel="alternate"/><category term="bug"/><published>2023-03-21T06:31:53+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/8</id><title>没猫病日志小程序</title><updated>2023-03-21T06:34:22.032056+00:00</updated><content type="html"><![CDATA[<h3>初期功能规划</h3>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/9" rel="alternate"/><category term="bug"/><published>2023-03-21T06:31:53+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/8</id><title>没猫病日志小程序</title><updated>2023-03-21T06:36:31.720191+00:00</updated><content type="html"><![CDATA[<h3>初期功能规划</h3>
 <p>主要实现功能：日历式治疗记录
 后续可增加功能：猫饭食谱，营养记录，病情状况科普自查
 1、主体是日历模式的每日治疗记录：治疗日期记录（打针天数，最近一次打针日期及距今几天），治疗时间（时间段），针剂/片剂的用量（根据填写信息计算得出的用药量和实际的注射情况，如漏液补打），注射部位（希望可以实现猫型平面图选择部位），体重变化情况（根据填写的用药信息更新计算用药剂量），猫咪症状（漏液皮肤溃烂or呕吐拉稀等），其他备注（针对并发症的辅助用药）
@@ -53,7 +89,7 @@ public void mouseDragged(MouseEvent e) {
 <p><img src="https://user-images.githubusercontent.com/68359161/226530567-c3ae8a8d-e771-4540-b9b7-0d0047ac8ca3.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/68359161/226530665-727ba60f-329b-4483-bc52-eb1b8e802243.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/68359161/226530705-f0b233a9-b4dd-45c5-8094-38f3b0be036e.png" alt="image" /></p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/8" rel="alternate"/><category term="Top"/><category term="项目记录"/><published>2023-03-21T06:12:39+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/7</id><title>猫传腹日志小程序版本更新</title><updated>2023-03-21T06:34:22.274720+00:00</updated><content type="html"><![CDATA[<p>V1.0.3（2023.03.15）</p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/8" rel="alternate"/><category term="Top"/><category term="项目记录"/><published>2023-03-21T06:12:39+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/7</id><title>猫传腹日志小程序版本更新</title><updated>2023-03-21T06:36:31.879810+00:00</updated><content type="html"><![CDATA[<p>V1.0.3（2023.03.15）</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> 优化各个数据设置交互和保存设置</li>
 <li><input checked="" disabled="" type="checkbox"> 限制未到日期的数据设置</li>
@@ -70,7 +106,7 @@ V1.0.5（2023.03.16）</li>
 <li><input disabled="" type="checkbox"> 首页增加下拉刷新功能</li>
 <li><input disabled="" type="checkbox"> UI修改</li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/7" rel="alternate"/><category term="TODO"/><published>2023-03-21T03:37:27+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/6</id><title>重构个人博客网站</title><updated>2023-03-21T06:34:22.508650+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/7" rel="alternate"/><category term="TODO"/><published>2023-03-21T03:37:27+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/6</id><title>重构个人博客网站</title><updated>2023-03-21T06:36:32.016531+00:00</updated><content type="html"><![CDATA[<ul>
 <li>
 <p><input disabled="" type="checkbox"> 技术栈的选择</p>
 </li>
@@ -78,6 +114,6 @@ V1.0.5（2023.03.16）</li>
 <p><input disabled="" type="checkbox"> 对云开发的调研使用，是否用其做网站托管</p>
 </li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/6" rel="alternate"/><category term="TODO"/><published>2023-03-21T03:22:14+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/5</id><title>actions生成md文件异常</title><updated>2023-03-21T06:34:22.725915+00:00</updated><content type="html"><![CDATA[<p>测试</p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/5" rel="alternate"/><category term="bug"/><published>2023-03-20T09:50:59+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/1</id><title>pip安装出现sslerror的问题</title><updated>2023-03-21T06:34:22.971854+00:00</updated><content type="html"><![CDATA[<p>pip install {安装包} -i <a href="http://pypi.douban.com/simple">http://pypi.douban.com/simple</a> --trusted-host pypi.douban.com</p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/6" rel="alternate"/><category term="TODO"/><published>2023-03-21T03:22:14+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/5</id><title>actions生成md文件异常</title><updated>2023-03-21T06:36:32.160880+00:00</updated><content type="html"><![CDATA[<p>测试</p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/5" rel="alternate"/><category term="bug"/><published>2023-03-20T09:50:59+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/1</id><title>pip安装出现sslerror的问题</title><updated>2023-03-21T06:36:32.350609+00:00</updated><content type="html"><![CDATA[<p>pip install {安装包} -i <a href="http://pypi.douban.com/simple">http://pypi.douban.com/simple</a> --trusted-host pypi.douban.com</p>
 ]]></content><link href="https://github.com/Smileye-v/gitblog/issues/1" rel="alternate"/><category term="技术笔记"/><published>2023-03-20T09:07:26+00:00</published></entry></feed>
