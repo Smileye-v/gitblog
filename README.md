@@ -7,12 +7,13 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 ## 置顶文章
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## 最近更新
+- [Java JLabel图片刷新问题](https://github.com/Smileye-v/gitblog/issues/12)--2023-03-21
 - [Java JFileChooser保存文件](https://github.com/Smileye-v/gitblog/issues/11)--2023-03-21
 - [beautyEye输入框中文输入法白屏](https://github.com/Smileye-v/gitblog/issues/10)--2023-03-21
 - [Java mousedragged事件时控件闪烁](https://github.com/Smileye-v/gitblog/issues/9)--2023-03-21
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
-- [猫传腹日志小程序版本更新](https://github.com/Smileye-v/gitblog/issues/7)--2023-03-21
 ## bug
+- [Java JLabel图片刷新问题](https://github.com/Smileye-v/gitblog/issues/12)--2023-03-21
 - [beautyEye输入框中文输入法白屏](https://github.com/Smileye-v/gitblog/issues/10)--2023-03-21
 - [Java mousedragged事件时控件闪烁](https://github.com/Smileye-v/gitblog/issues/9)--2023-03-21
 - [actions生成md文件异常](https://github.com/Smileye-v/gitblog/issues/5)--2023-03-20
