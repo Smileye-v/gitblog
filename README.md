@@ -7,12 +7,13 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 ## 置顶文章
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## 最近更新
+- [Java mousedragged事件时控件闪烁](https://github.com/Smileye-v/gitblog/issues/9)--2023-03-21
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 - [猫传腹日志小程序版本更新](https://github.com/Smileye-v/gitblog/issues/7)--2023-03-21
 - [重构个人博客网站](https://github.com/Smileye-v/gitblog/issues/6)--2023-03-21
 - [actions生成md文件异常](https://github.com/Smileye-v/gitblog/issues/5)--2023-03-20
-- [pip安装出现sslerror的问题](https://github.com/Smileye-v/gitblog/issues/1)--2023-03-20
 ## bug
+- [Java mousedragged事件时控件闪烁](https://github.com/Smileye-v/gitblog/issues/9)--2023-03-21
 - [actions生成md文件异常](https://github.com/Smileye-v/gitblog/issues/5)--2023-03-20
 ## 技术笔记
 - [pip安装出现sslerror的问题](https://github.com/Smileye-v/gitblog/issues/1)--2023-03-20
