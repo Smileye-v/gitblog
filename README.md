@@ -30,19 +30,7 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 ## 项目记录
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## TODO
-TODO list from [猫传腹日志小程序版本更新](https://github.com/Smileye-v/gitblog/issues/7)--6 jobs to do--6 jobs done
-- [x] 优化各个数据设置交互和保存设置
-- [x] 限制未到日期的数据设置
-- [x] 优化猫咪年龄显示，增加月龄
-- [x] 增加初始体重数据，对异常体重的剂量计算
-- [x] 修复无初始体重，治疗用量计算NaN问题
-- [x] 修改体重降低时的剂量计算
-- [ ] 增加删除记录功能
-- [ ] 数据填写增加验证
-- [ ] 注射部位添加多选功能
-- [ ] 体重修改不灵敏，点击无反应修复
-- [ ] 首页增加下拉刷新功能
-- [ ] UI修改
+TODO list from [猫传腹日志小程序版本更新](https://github.com/Smileye-v/gitblog/issues/7) all done
 
 TODO list from [重构个人博客网站](https://github.com/Smileye-v/gitblog/issues/6)--2 jobs to do--0 jobs done
 - [ ] 技术栈的选择
