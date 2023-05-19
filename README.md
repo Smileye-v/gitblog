@@ -7,11 +7,11 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 ## 置顶文章
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## 最近更新
+- [播客收藏](https://github.com/Smileye-v/gitblog/issues/19)--2023-05-19
 - [Chatgpt相关](https://github.com/Smileye-v/gitblog/issues/18)--2023-05-18
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
 - [微信小程序如何使用svg并动态修改颜色](https://github.com/Smileye-v/gitblog/issues/16)--2023-03-24
 - [python爬虫读取ins照片问题总结](https://github.com/Smileye-v/gitblog/issues/15)--2023-03-21
-- [npm install出现Sorry, name can only contain URL-friendly characters.](https://github.com/Smileye-v/gitblog/issues/14)--2023-03-21
 ## 杂七杂八
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
 ## bug
@@ -31,6 +31,8 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 - [python爬虫读取ins照片问题总结](https://github.com/Smileye-v/gitblog/issues/15)--2023-03-21
 - [Java JFileChooser保存文件](https://github.com/Smileye-v/gitblog/issues/11)--2023-03-21
 - [pip安装出现sslerror的问题](https://github.com/Smileye-v/gitblog/issues/1)--2023-03-20
+## 播客收藏
+- [播客收藏](https://github.com/Smileye-v/gitblog/issues/19)--2023-05-19
 ## 项目记录
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## TODO
