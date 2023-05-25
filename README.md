@@ -38,7 +38,5 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 ## TODO
 TODO list from [猫传腹日志小程序版本更新](https://github.com/Smileye-v/gitblog/issues/7) all done
 
-TODO list from [重构个人博客网站](https://github.com/Smileye-v/gitblog/issues/6)--2 jobs to do--0 jobs done
-- [ ] 技术栈的选择
-- [ ] 对云开发的调研使用，是否用其做网站托管
+TODO list from [重构个人博客网站](https://github.com/Smileye-v/gitblog/issues/6) all done
 
