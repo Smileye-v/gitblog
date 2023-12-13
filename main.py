@@ -152,11 +152,12 @@ def add_md_top(repo, md, me):
 def add_md_firends(repo, md, me):
     s = FRIENDS_TABLE_HEAD
     friends_issues = list(repo.get_issues(labels=FRIENDS_LABELS))
+    friends_issue_number = friends_issues[0].number
     for issue in friends_issues:
         for comment in issue.get_comments():
             if is_hearted_by_me(comment, me):
                 try:
-                    s += _make_friend_table_string(comment.body)
+                    s += _make_friend_table_string(comment.body or "")
                 except Exception as e:
                     print(str(e))
                     pass
@@ -177,8 +178,8 @@ def add_md_recent(repo, md, me, limit=5):
                     count += 1
                     if count >= limit:
                         break
-        except:
-            return
+        except Exception as e:
+            print(str(e))
 
 
 def add_md_header(md, repo_name):
@@ -284,12 +285,12 @@ def save_issue(issue, me, dir_name=BACKUP_DIR):
     )
     with open(md_name, "w") as f:
         f.write(f"# [{issue.title}]({issue.html_url})\n\n")
-        f.write(issue.body)
+        f.write(issue.body or "")
         if issue.comments:
             for c in issue.get_comments():
                 if is_me(c, me):
                     f.write("\n\n---\n\n")
-                    f.write(c.body)
+                    f.write(c.body or "")
 
 
 if __name__ == "__main__":
