@@ -152,7 +152,6 @@ def add_md_top(repo, md, me):
 def add_md_firends(repo, md, me):
     s = FRIENDS_TABLE_HEAD
     friends_issues = list(repo.get_issues(labels=FRIENDS_LABELS))
-    friends_issue_number = friends_issues[0].number
     for issue in friends_issues:
         for comment in issue.get_comments():
             if is_hearted_by_me(comment, me):
