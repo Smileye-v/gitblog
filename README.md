@@ -45,7 +45,7 @@ TODO list from [想买的东西](https://github.com/Smileye-v/gitblog/issues/23)
 - [ ] 观景台猫爬架 ￥298 + 护栏 ￥38
 - [ ] Roland电钢 ￥3305
 
-TODO list from [手工学习](https://github.com/Smileye-v/gitblog/issues/22)--7 jobs to do--0 jobs done
+TODO list from [手工学习](https://github.com/Smileye-v/gitblog/issues/22)--8 jobs to do--0 jobs done
 - [ ] 大尺寸画框（19），内容材料决定
 - [ ] 小尺寸油画（那个猫的），买小部分油画工具
 - [ ] 小尺寸16k或者32k，风景画（S）
@@ -53,6 +53,7 @@ TODO list from [手工学习](https://github.com/Smileye-v/gitblog/issues/22)--7
 - [ ] 春联：福字，画画型（墙）
 - [ ] 书法：买点宣纸练字
 - [ ] 玩偶手作
+- [ ] 板绘：阿瓜（袄）
 
 TODO list from [前端知识学习](https://github.com/Smileye-v/gitblog/issues/21)--3 jobs to do--0 jobs done
 - [ ] 调研目前流行的技术栈
