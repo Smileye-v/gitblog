@@ -7,11 +7,11 @@ My personal blog using issues and GitHub Actions (随意转载，无需署名)
 ## 置顶文章
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## 最近更新
+- [手工学习](https://github.com/Smileye-v/gitblog/issues/22)--2024-02-24
 - [前端知识学习](https://github.com/Smileye-v/gitblog/issues/21)--2023-06-20
 - [使用Notion整理笔记](https://github.com/Smileye-v/gitblog/issues/20)--2023-06-20
 - [播客收藏](https://github.com/Smileye-v/gitblog/issues/19)--2023-05-19
 - [Chatgpt相关](https://github.com/Smileye-v/gitblog/issues/18)--2023-05-18
-- [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
 ## 杂七杂八
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
 ## bug
