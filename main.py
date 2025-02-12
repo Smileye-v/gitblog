@@ -3,13 +3,15 @@ import argparse
 import os
 import re
 
-from marko.ext.gfm import gfm as marko
-from github import Github
+import markdown
 from feedgen.feed import FeedGenerator
+from github import Github
 from lxml.etree import CDATA
+from marko.ext.gfm import gfm as marko
 
-MD_HEAD = """## Gitblog
-My personal blog using issues and GitHub Actions (随意转载，无需署名)
+MD_HEAD = """## [Gitblog](https://yihong0618.github.io/gitblog/)
+My personal blog([About Me](https://github.com/yihong0618/gitblog/issues/282)) using issues and GitHub Actions (随意转载，无需署名)
+![image](https://github.com/user-attachments/assets/a168bf11-661e-4566-b042-7fc9544de528)
 [RSS Feed](https://raw.githubusercontent.com/{repo_name}/master/feed.xml)
 """
 
@@ -18,7 +20,8 @@ ANCHOR_NUMBER = 5
 TOP_ISSUES_LABELS = ["Top"]
 TODO_ISSUES_LABELS = ["TODO"]
 FRIENDS_LABELS = ["Friends"]
-IGNORE_LABELS = FRIENDS_LABELS + TOP_ISSUES_LABELS + TODO_ISSUES_LABELS
+ABOUT_LABELS = ["About"]
+IGNORE_LABELS = FRIENDS_LABELS + TOP_ISSUES_LABELS + TODO_ISSUES_LABELS + ABOUT_LABELS
 
 FRIENDS_TABLE_HEAD = "| Name | Link | Desc | \n | ---- | ---- | ---- |\n"
 FRIENDS_TABLE_TEMPLATE = "| {name} | {link} | {desc} |\n"
@@ -114,8 +117,7 @@ def get_repo_labels(repo):
 
 
 def get_issues_from_label(repo, label):
-    return repo.get_issues(labels=[label])
-    # return repo.get_issues(labels=(label,))
+    return repo.get_issues(labels=(label,))
 
 
 def add_issue_info(issue, md):
@@ -151,8 +153,12 @@ def add_md_top(repo, md, me):
 
 
 def add_md_firends(repo, md, me):
+
     s = FRIENDS_TABLE_HEAD
     friends_issues = list(repo.get_issues(labels=FRIENDS_LABELS))
+    if not FRIENDS_LABELS or not friends_issues:
+        return
+    friends_issue_number = friends_issues[0].number
     for issue in friends_issues:
         for comment in issue.get_comments():
             if is_hearted_by_me(comment, me):
@@ -161,9 +167,15 @@ def add_md_firends(repo, md, me):
                 except Exception as e:
                     print(str(e))
                     pass
+    s = markdown.markdown(s, output_format="html", extensions=["extra"])
     with open(md, "a+", encoding="utf-8") as md:
-        md.write("## 友情链接\n")
+        md.write(
+            f"## [友情链接](https://github.com/{str(me)}/gitblog/issues/{friends_issue_number})\n"
+        )
+        md.write("<details><summary>显示</summary>\n")
         md.write(s)
+        md.write("</details>\n")
+        md.write("\n\n")
 
 
 def add_md_recent(repo, md, me, limit=5):
@@ -185,18 +197,26 @@ def add_md_recent(repo, md, me, limit=5):
 def add_md_header(md, repo_name):
     with open(md, "w", encoding="utf-8") as md:
         md.write(MD_HEAD.format(repo_name=repo_name))
+        md.write("\n")
 
 
 def add_md_label(repo, md, me):
     labels = get_repo_labels(repo)
 
-    # sort lables by description info if it exists, otherwise sort by name, 
+    # sort lables by description info if it exists, otherwise sort by name,
     # for example, we can let the description start with a number (1#Java, 2#Docker, 3#K8s, etc.)
-    labels = sorted(labels, key=lambda x: (x.description is None, x.description == "", x.description, x.name))
+    labels = sorted(
+        labels,
+        key=lambda x: (
+            x.description is None,
+            x.description == "",
+            x.description,
+            x.name,
+        ),
+    )
 
     with open(md, "a+", encoding="utf-8") as md:
         for label in labels:
-
             # we don't need add top label again
             if label.name in IGNORE_LABELS:
                 continue
