@@ -12,10 +12,6 @@ on:
     paths:
       - main.py
 
-env:
-  GITHUB_NAME: meimaolu
-  GITHUB_EMAIL: meimaolu@163.com
-
 jobs:
   sync:
     name: Generate README
@@ -23,20 +19,13 @@ jobs:
     if: github.repository_owner_id == github.event.issue.user.id || github.event_name == 'push'
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v5
         with:
           python-version: 3.8
-
-      - name: Configure pip cache
-        uses: actions/cache@v1
-        id: pip-cache
-        with:
-          path: venv
-          key: pip-1-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            pip-
+          cache: pip
+          cache-dependency-path: "requirements.txt"
 
       - name: Install dependencies
         run: |
@@ -44,7 +33,6 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install -r requirements.txt
-        if: steps.pip-cache.outputs.cache-hit != 'true'
 
       - name: Generate new md
         run: |
@@ -53,8 +41,8 @@ jobs:
 
       - name: Push README
         run: |
-          git config --local user.email "${{ env.GITHUB_EMAIL }}"
-          git config --local user.name "${{ env.GITHUB_NAME }}"
+          git config --local user.email "meimaolu@163.com"
+          git config --local user.name "meimaolu"
           git add BACKUP/*.md
           git commit -a -m 'update new blog' || echo "nothing to commit"
           git push || echo "nothing to push"
