@@ -1,9 +1,8 @@
-## Gitblog
-My personal blog using issues and GitHub Actions (随意转载，无需署名)
+## [Gitblog](https://yihong0618.github.io/gitblog/)
+My personal blog([About Me](https://github.com/yihong0618/gitblog/issues/282)) using issues and GitHub Actions (随意转载，无需署名)
+![image](https://github.com/user-attachments/assets/a168bf11-661e-4566-b042-7fc9544de528)
 [RSS Feed](https://raw.githubusercontent.com/Smileye-v/gitblog/master/feed.xml)
-## 友情链接
-| Name | Link | Desc | 
- | ---- | ---- | ---- |
+
 ## 置顶文章
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
@@ -57,9 +56,9 @@ TODO list from [手工学习](https://github.com/Smileye-v/gitblog/issues/22)--6
 - [ ] 春联：福字，画画型（墙）
 - [ ] 书法：买点宣纸练字
 
-TODO list from [前端知识学习](https://github.com/Smileye-v/gitblog/issues/21)--3 jobs to do--0 jobs done
-- [ ] 调研目前流行的技术栈
-- [ ] 熟用vue3
+TODO list from [前端知识学习](https://github.com/Smileye-v/gitblog/issues/21)--1 jobs to do--2 jobs done
+- [x] 调研目前流行的技术栈
+- [x] 熟用vue3
 - [ ] 学习ts+react+nextjs，能找到有趣的项目并用该技术栈去实现
 
 TODO list from [使用Notion整理笔记](https://github.com/Smileye-v/gitblog/issues/20)--4 jobs to do--0 jobs done
