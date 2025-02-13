@@ -7,11 +7,11 @@ My personal blog([About Me](https://github.com/yihong0618/gitblog/issues/282)) u
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## 最近更新
+- [博客](https://github.com/Smileye-v/gitblog/issues/26)--2025-02-13
 - [React.FC详细解说](https://github.com/Smileye-v/gitblog/issues/25)--2025-02-12
 - [点击事件在移动端真机测试无效](https://github.com/Smileye-v/gitblog/issues/24)--2024-04-30
 - [想买的东西](https://github.com/Smileye-v/gitblog/issues/23)--2024-02-24
 - [手工学习](https://github.com/Smileye-v/gitblog/issues/22)--2024-02-24
-- [前端知识学习](https://github.com/Smileye-v/gitblog/issues/21)--2023-06-20
 ## 杂七杂八
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
 ## bug
