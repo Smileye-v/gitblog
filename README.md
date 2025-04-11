@@ -14,7 +14,6 @@ My personal blog([About Me](https://github.com/yihong0618/gitblog/issues/282)) u
 - [手工学习](https://github.com/Smileye-v/gitblog/issues/22)--2024-02-24
 ## 杂七杂八
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
-## bug
 - [点击事件在移动端真机测试无效](https://github.com/Smileye-v/gitblog/issues/24)--2024-04-30
 - [npm install出现Sorry, name can only contain URL-friendly characters.](https://github.com/Smileye-v/gitblog/issues/14)--2023-03-21
 - [Mysql错误提示 Can‘t create table, errno:165](https://github.com/Smileye-v/gitblog/issues/13)--2023-03-21
@@ -26,7 +25,6 @@ My personal blog([About Me](https://github.com/yihong0618/gitblog/issues/282)) u
 - [actions生成md文件异常](https://github.com/Smileye-v/gitblog/issues/5)--2023-03-20
 </details>
 
-## 技术笔记
 - [在本地使用 Git 对比两个文件夹的差异](https://github.com/Smileye-v/gitblog/issues/27)--2025-04-08
 - [React.FC详细解说](https://github.com/Smileye-v/gitblog/issues/25)--2025-02-12
 - [Chatgpt相关](https://github.com/Smileye-v/gitblog/issues/18)--2023-05-18
