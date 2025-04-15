@@ -10,7 +10,7 @@ or increase socketAcquisitionWarningTimeout=(millis) in the NodeHttpHandler conf
 修改action/storage/s3.js，引入 @smithy/node-http-handler 的 NodeHttpHandler，并在 S3Client 配置中设置 maxSockets 和可选的 socketAcquisitionWarningTimeout
 `const { NodeHttpHandler } = require("@smithy/node-http-handler");`
 `requestHandler: new NodeHttpHandler({`
-`    maxSockets: 800, // 增加 socket 上限`
+`    maxSockets: 500, // 增加 socket 上限`
 `    socketAcquisitionWarningTimeout: 50000, // 延迟警告（毫秒，可选）`
 `}),`
 
