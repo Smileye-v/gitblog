@@ -15,7 +15,7 @@ or increase socketAcquisitionWarningTimeout=(millis) in the NodeHttpHandler conf
 `}),`
 
 
-### 拉去文件数只有1000
+### 拉取文件数只有1000
 **原因**
 `new client_s3_1.ListObjectsCommand`，ListObjectsCommand默认返回最多 1000 个对象
 **解决方案**
