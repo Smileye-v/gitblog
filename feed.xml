@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/Smileye-v/gitblog</id><title>RSS feed of Smileye-v's gitblog</title><updated>2025-04-21T01:55:53.996440+00:00</updated><link href="https://github.com/Smileye-v/gitblog"/><link href="https://raw.githubusercontent.com/Smileye-v/gitblog/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/Smileye-v/gitblog/issues/29</id><title>猫咪饮食记录</title><updated>2025-04-21T01:55:54.432890+00:00</updated><content type="html"><![CDATA[<h3>生骨肉记录</h3>
+<feed xmlns="http://www.w3.org/2005/Atom"><id>https://github.com/Smileye-v/gitblog</id><title>RSS feed of Smileye-v's gitblog</title><updated>2025-04-22T08:46:18.729840+00:00</updated><link href="https://github.com/Smileye-v/gitblog"/><link href="https://raw.githubusercontent.com/Smileye-v/gitblog/master/feed.xml" rel="self"/><generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator><entry><id>https://github.com/Smileye-v/gitblog/issues/29</id><title>猫咪饮食记录</title><updated>2025-04-22T08:46:19.080904+00:00</updated><content type="html"><![CDATA[<h3>生骨肉记录</h3>
 <ul>
 <li>新西兰犊牛后腿肉</li>
 <li>兔里脊</li>
@@ -15,7 +15,7 @@
 <li>西班牙猪大里脊</li>
 <li>青花鱼片</li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/29"/><category term="生活"/><published>2025-04-21T01:55:19+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/28</id><title>laf-cli命令行工具导出云存储报错</title><updated>2025-04-21T01:55:54.639617+00:00</updated><content type="html"><![CDATA[<h3>高并发请求</h3>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/29"/><category term="生活"/><published>2025-04-21T01:55:19+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/28</id><title>laf-cli命令行工具导出云存储报错</title><updated>2025-04-22T08:46:19.204599+00:00</updated><content type="html"><![CDATA[<h3>高并发请求</h3>
 <p><strong>报错如下</strong>
 <code>@smithy/node-http-handler:WARN - socket usage at capacity=50 and 638 additional requests are enqueued. See https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/node-configuring-maxsockets.html or increase socketAcquisitionWarningTimeout=(millis) in the NodeHttpHandler config.</code></p>
 <p><strong>解决方法</strong>
@@ -52,7 +52,7 @@
 <code>    }</code>
 <code>    continuationToken = res.NextContinuationToken;</code>
 <code>} while (continuationToken);</code></p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/28"/><category term="技术笔记"/><published>2025-04-15T02:59:54+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/27</id><title>在本地使用 Git 对比两个文件夹的差异</title><updated>2025-04-21T01:55:54.817963+00:00</updated><content type="html"><![CDATA[<h3>1. 创建一个临时 Git 仓库</h3>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/28"/><category term="技术笔记"/><published>2025-04-15T02:59:54+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/27</id><title>在本地使用 Git 对比两个文件夹的差异</title><updated>2025-04-22T08:46:19.324192+00:00</updated><content type="html"><![CDATA[<h3>1. 创建一个临时 Git 仓库</h3>
 <p>在一个空目录中初始化一个 Git 仓库：
 <code>mkdir temp-git-diff</code>
 <code>cd temp-git-diff</code>
@@ -79,7 +79,7 @@
 <p>检查完差异后，可以删除这个临时目录：
 <code>cd ..</code>
 <code>rm -rf temp-git-diff</code></p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/27"/><category term="技术笔记"/><published>2025-04-08T02:45:11+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/25</id><title>React.FC详细解说</title><updated>2025-04-21T01:55:54.998038+00:00</updated><content type="html"><![CDATA[<ol>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/27"/><category term="技术笔记"/><published>2025-04-08T02:45:11+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/25</id><title>React.FC详细解说</title><updated>2025-04-22T08:46:19.474683+00:00</updated><content type="html"><![CDATA[<ol>
 <li>
 <p><code>React.FC</code>是一个函数式组件，是在TypeScript使用一个泛型，FC就是<code>FunctionComponent</code>的缩写，事实上<code>React.FC</code>可以写成<code>React.FunctionComponent</code></p>
 <pre><code class="language-react">const App: React.FunctionComponent&lt;{ message: string }&gt; = ({ message }) =&gt; (
@@ -132,13 +132,13 @@ export App: React.FC&lt;{}&gt; = (props) =&gt; { //泛型里面有对象{ 属性
 <p>（7）如果没有后面的参数，甚至没有[]，即useEffect(()=&gt;{}),这种情况下，每当页面中useState值发生变化，useEffect中的代码就会执行一次，这是不可取的！</p>
 </li>
 </ol>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/25"/><category term="技术笔记"/><published>2025-02-12T02:54:31+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/24</id><title>点击事件在移动端真机测试无效</title><updated>2025-04-21T01:55:55.184419+00:00</updated><content type="html"><![CDATA[<h3>问题：</h3>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/25"/><category term="技术笔记"/><published>2025-02-12T02:54:31+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/24</id><title>点击事件在移动端真机测试无效</title><updated>2025-04-22T08:46:19.584114+00:00</updated><content type="html"><![CDATA[<h3>问题：</h3>
 <p>点击按钮触发特效，特效通过js控制dom元素实现，在ios17版本以下ios手机及安卓系统测试正常，在ios17版本以上及鸿蒙系统测试失败</p>
 <h3>原因：</h3>
 <p>js代码中使用了  <code>var partDom = document.getElementsByName(part);</code> ，新版系统浏览器不再支持 <strong>getElementsByName</strong></p>
 <h3>解决方案：</h3>
 <p>将 <code>var partDom = document.getElementsByName(part);</code> 更改为 <code>var partDom = document.querySelectorAll(&#x27;[name=&quot;&#x27; + part + &#x27;&quot;]&#x27;);</code></p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/24"/><category term="bug"/><published>2024-04-30T11:11:45+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/23</id><title>想买的东西</title><updated>2025-04-21T01:55:55.342648+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/24"/><category term="bug"/><published>2024-04-30T11:11:45+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/23</id><title>想买的东西</title><updated>2025-04-22T08:46:19.685497+00:00</updated><content type="html"><![CDATA[<ul>
 <li><input disabled="" type="checkbox"> 小天鹅烘干机 ￥3099</li>
 <li><input disabled="" type="checkbox"> bello手推车 ￥398</li>
 <li><input disabled="" type="checkbox"> cherry键盘 ￥269</li>
@@ -147,7 +147,7 @@ export App: React.FC&lt;{}&gt; = (props) =&gt; { //泛型里面有对象{ 属性
 <li><input disabled="" type="checkbox"> 观景台猫爬架 ￥298 + 护栏 ￥38</li>
 <li><input disabled="" type="checkbox"> Roland电钢 ￥3305</li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/23"/><category term="生活"/><published>2024-02-24T06:40:15+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/22</id><title>手工学习</title><updated>2025-04-21T01:55:55.534717+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/23"/><category term="生活"/><published>2024-02-24T06:40:15+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/22</id><title>手工学习</title><updated>2025-04-22T08:46:19.786971+00:00</updated><content type="html"><![CDATA[<ul>
 <li><input disabled="" type="checkbox"> boss baby粘土 棉花玩偶 （墙</li>
 <li><input disabled="" type="checkbox"> 大尺寸画框（19），内容材料决定</li>
 <li><input disabled="" type="checkbox"> 小尺寸油画（那个猫的），买小部分油画工具</li>
@@ -158,20 +158,20 @@ export App: React.FC&lt;{}&gt; = (props) =&gt; { //泛型里面有对象{ 属性
 <li><input checked="" disabled="" type="checkbox"> 玩偶手作</li>
 <li><input checked="" disabled="" type="checkbox"> 板绘：阿瓜（袄）</li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/22"/><category term="生活"/><published>2024-02-24T06:28:55+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/21</id><title>前端知识学习</title><updated>2025-04-21T01:55:55.715370+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/22"/><category term="生活"/><published>2024-02-24T06:28:55+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/21</id><title>前端知识学习</title><updated>2025-04-22T08:46:19.933717+00:00</updated><content type="html"><![CDATA[<ul>
 <li><input checked="" disabled="" type="checkbox"> 调研目前流行的技术栈</li>
 <li><input checked="" disabled="" type="checkbox"> 熟用vue3</li>
 <li><input disabled="" type="checkbox"> 学习ts+react+nextjs，能找到有趣的项目并用该技术栈去实现</li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/21"/><category term="TODO"/><published>2023-06-20T07:28:59+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/20</id><title>使用Notion整理笔记</title><updated>2025-04-21T01:55:55.874449+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/21"/><category term="TODO"/><published>2023-06-20T07:28:59+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/20</id><title>使用Notion整理笔记</title><updated>2025-04-22T08:46:20.077726+00:00</updated><content type="html"><![CDATA[<ul>
 <li><input disabled="" type="checkbox"> 熟悉Notion基本使用功能</li>
 <li><input disabled="" type="checkbox"> 使用Notion整理规划有道云笔记中的笔记</li>
 <li><input disabled="" type="checkbox"> 记录猫咪科养学习笔记（豆瓣收藏、公众号文章收藏、医学书籍）</li>
 <li><input disabled="" type="checkbox"> Notion整理规划笔记，blog存储在gitblog中，并同步到个人博客网站上</li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/20"/><category term="TODO"/><published>2023-06-20T07:24:59+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/19</id><title>播客收藏</title><updated>2025-04-21T01:55:56.076806+00:00</updated><content type="html"><![CDATA[<p><a href="https://pythonhunter.org/">捕蛇者说 - 聊聊编程、程序员和 Python</a></p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/19"/><category term="播客收藏"/><published>2023-05-19T10:03:33+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/18</id><title>Chatgpt相关</title><updated>2025-04-21T01:55:56.277894+00:00</updated><content type="html"><![CDATA[<p><a href="https://www.notion.so/Chatgpt-API-Upgrade-9581134af3d744788a06533a21e7edae">Chatgpt API Upgrade（充值）教程</a></p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/18"/><category term="技术笔记"/><published>2023-05-18T06:43:50+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/17</id><title>网站收集</title><updated>2025-04-21T01:55:56.465093+00:00</updated><content type="html"><![CDATA[<h3>学习</h3>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/20"/><category term="TODO"/><published>2023-06-20T07:24:59+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/19</id><title>播客收藏</title><updated>2025-04-22T08:46:20.207958+00:00</updated><content type="html"><![CDATA[<p><a href="https://pythonhunter.org/">捕蛇者说 - 聊聊编程、程序员和 Python</a></p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/19"/><category term="播客收藏"/><published>2023-05-19T10:03:33+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/18</id><title>Chatgpt相关</title><updated>2025-04-22T08:46:20.331261+00:00</updated><content type="html"><![CDATA[<p><a href="https://www.notion.so/Chatgpt-API-Upgrade-9581134af3d744788a06533a21e7edae">Chatgpt API Upgrade（充值）教程</a></p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/18"/><category term="技术笔记"/><published>2023-05-18T06:43:50+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/17</id><title>网站收集</title><updated>2025-04-22T08:46:20.443764+00:00</updated><content type="html"><![CDATA[<h3>学习</h3>
 <ul>
 <li><a href="https://free-for.dev/#/">免费在线开发工具资源</a></li>
 <li><a href="https://ui.aceternity.com/">Aceternity Ul 代码库</a></li>
@@ -187,6 +187,7 @@ export App: React.FC&lt;{}&gt; = (props) =&gt; { //泛型里面有对象{ 属性
 </ul>
 <h3>博客</h3>
 <ul>
+<li><a href="https://cholyknight.com/">cholyknight玩偶大师</a></li>
 <li><a href="https://nisiryu.blogspot.com/?m=1">九井老师</a></li>
 <li><a href="https://kentcdodds.com/blog">kentcdodds大佬的blog</a></li>
 <li><a href="https://www.joshwcomeau.com/">CSS大佬joshwcomeau的博客</a></li>
@@ -220,11 +221,11 @@ export App: React.FC&lt;{}&gt; = (props) =&gt; { //泛型里面有对象{ 属性
 <li><a href="https://react-redux.js.org/tutorials/quick-start">react-redux</a></li>
 <li><a href="https://primer.style/css/storybook/?path=/docs/gettingstarted--docs">GitHub css组件库</a></li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/17"/><category term="杂七杂八"/><category term="Top"/><published>2023-03-28T07:07:57+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/16</id><title>微信小程序如何使用svg并动态修改颜色</title><updated>2025-04-21T01:55:56.651056+00:00</updated><content type="html"><![CDATA[<p>微信小程序并不支持直接使用svg标签，但是其image标签src支持base64
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/17"/><category term="杂七杂八"/><category term="Top"/><published>2023-03-28T07:07:57+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/16</id><title>微信小程序如何使用svg并动态修改颜色</title><updated>2025-04-22T08:46:20.570817+00:00</updated><content type="html"><![CDATA[<p>微信小程序并不支持直接使用svg标签，但是其image标签src支持base64
 因此我们可以将svg转化为image支持的base64格式代码，每次需要动态修改时都需要将修改后的svg转为base64格式代码再重新赋值，从而实现动态样式转化
 示例：
 <a href="https://juejin.cn/post/7115607195082358821">https://juejin.cn/post/7115607195082358821</a></p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/16"/><category term="技术笔记"/><published>2023-03-24T09:12:40+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/15</id><title>python爬虫读取ins照片问题总结</title><updated>2025-04-21T01:55:56.813261+00:00</updated><content type="html"><![CDATA[<p>在运行<a href="https://github.com/Smileye-v/python-crawling-instagram">python爬虫项目</a>时
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/16"/><category term="技术笔记"/><published>2023-03-24T09:12:40+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/15</id><title>python爬虫读取ins照片问题总结</title><updated>2025-04-22T08:46:20.677654+00:00</updated><content type="html"><![CDATA[<p>在运行<a href="https://github.com/Smileye-v/python-crawling-instagram">python爬虫项目</a>时
 <img src="https://user-images.githubusercontent.com/68359161/226536075-b04662ba-d748-4156-81fd-60da84e435d0.png" alt="image" />
 出现该报错时添加cookies
 <img src="https://user-images.githubusercontent.com/68359161/226536099-c01b4de8-c2c3-45e3-b241-60b2b87bf88c.png" alt="image" />
@@ -234,15 +235,15 @@ ERROR: No matching distribution found for urllib3
 </code></pre>
 <p><strong>解决方法</strong>: 因为python国内网站网络不稳定的问题，于是使用镜像</p>
 <p><code>pip install 包的名字 -i http://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com</code></p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/15"/><category term="技术笔记"/><published>2023-03-21T06:52:50+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/14</id><title>npm install出现Sorry, name can only contain URL-friendly characters.</title><updated>2025-04-21T01:55:57.006046+00:00</updated><content type="html"><![CDATA[<p>在前端项目里安装安装 gulp的时候，出现了如下“Sorry, name can only contain URL-friendly characters.“
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/15"/><category term="技术笔记"/><published>2023-03-21T06:52:50+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/14</id><title>npm install出现Sorry, name can only contain URL-friendly characters.</title><updated>2025-04-22T08:46:20.781353+00:00</updated><content type="html"><![CDATA[<p>在前端项目里安装安装 gulp的时候，出现了如下“Sorry, name can only contain URL-friendly characters.“
 <img src="https://user-images.githubusercontent.com/68359161/226535684-2af57f96-5e8e-46ad-a7ec-00735613d7ca.png" alt="image" />
 这是因为在npm初始化的时候，会向我们询问项目名，如果我们不命名回车跳过的话，它会指定你的文件件的名称当做项目名。但是我的项目名称是不规范的有了两个-，所以需要重新npm install gulp –save-dev一下，在询问项目名的时候定义一下，比如说police。然后其他的信息可以先不填后期填。
 <img src="https://user-images.githubusercontent.com/68359161/226535710-18fd1ed3-0020-42ef-9b0e-61575371afb2.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/68359161/226535720-db7f1e66-6875-43ac-b421-8147dc18a323.png" alt="image" />
 最后确认</p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/14"/><category term="bug"/><published>2023-03-21T06:49:32+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/13</id><title>Mysql错误提示 Can‘t create table, errno:165</title><updated>2025-04-21T01:55:57.176291+00:00</updated><content type="html"><![CDATA[<p><strong>Mysql错误提示 Can't create table, errno:165</strong></p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/14"/><category term="bug"/><published>2023-03-21T06:49:32+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/13</id><title>Mysql错误提示 Can‘t create table, errno:165</title><updated>2025-04-22T08:46:20.921156+00:00</updated><content type="html"><![CDATA[<p><strong>Mysql错误提示 Can't create table, errno:165</strong></p>
 <p>去掉my.ini里面的innodb_force_recovery = 4 然后重新启动mysql服务</p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/13"/><category term="bug"/><published>2023-03-21T06:42:54+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/12</id><title>Java JLabel图片刷新问题</title><updated>2025-04-21T01:55:57.357583+00:00</updated><content type="html"><![CDATA[<p>Jlabel设置了图片，当图片文件改变时，展示图片的内容却没有改变。</p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/13"/><category term="bug"/><published>2023-03-21T06:42:54+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/12</id><title>Java JLabel图片刷新问题</title><updated>2025-04-22T08:46:21.055367+00:00</updated><content type="html"><![CDATA[<p>Jlabel设置了图片，当图片文件改变时，展示图片的内容却没有改变。</p>
 <p>直接用以下方法无法刷新：</p>
 <pre><code>JPanel.removeAll();
 JPanel.repaint();
@@ -264,7 +265,7 @@ JLabel.setVisible(true);
 JLabel.setIcon(image);
 </code></pre>
 <p>这样子，当图片文件改变时，展示时JLable的图片展示也能随着刷新。</p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/12"/><category term="bug"/><published>2023-03-21T06:42:06+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/11</id><title>Java JFileChooser保存文件</title><updated>2025-04-21T01:55:57.542625+00:00</updated><content type="html"><![CDATA[<pre><code>//创建文件选择器
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/12"/><category term="bug"/><published>2023-03-21T06:42:06+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/11</id><title>Java JFileChooser保存文件</title><updated>2025-04-22T08:46:21.155941+00:00</updated><content type="html"><![CDATA[<pre><code>//创建文件选择器
 JFileChooser fileChooser = new JFileChooser();
 //后缀名过滤器
 FileNameExtensionFilter filter = new FileNameExtensionFilter(&quot;标签文件(*.txt)&quot;, &quot;txt&quot;);
@@ -300,7 +301,7 @@ FileOutputStream fos = null;
 <blockquote>
 <p><a href="https://zhidao.baidu.com/question/202631853.html">https://zhidao.baidu.com/question/202631853.html</a></p>
 </blockquote>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/11"/><category term="技术笔记"/><published>2023-03-21T06:36:06+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/10</id><title>beautyEye输入框中文输入法白屏</title><updated>2025-04-21T01:55:57.711486+00:00</updated><content type="html"><![CDATA[<p>在使用Java Swing编写程序时引用beautyEye以修改样式，但在使用输入框时，输入中文窗口就出现白屏。
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/11"/><category term="技术笔记"/><published>2023-03-21T06:36:06+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/10</id><title>beautyEye输入框中文输入法白屏</title><updated>2025-04-22T08:46:21.299483+00:00</updated><content type="html"><![CDATA[<p>在使用Java Swing编写程序时引用beautyEye以修改样式，但在使用输入框时，输入中文窗口就出现白屏。
 <img src="https://user-images.githubusercontent.com/68359161/226533454-3ccf4247-1a5e-4fec-b108-f1731def2b0f.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/68359161/226533485-7bdbffbe-fb7e-410b-a1aa-a779d360eb10.png" alt="image" /></p>
 <h3>解决方法</h3>
@@ -317,7 +318,7 @@ FileOutputStream fos = null;
 		
 	}
 </code></pre>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/10"/><category term="bug"/><published>2023-03-21T06:33:45+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/9</id><title>Java mousedragged事件时控件闪烁</title><updated>2025-04-21T01:55:57.916333+00:00</updated><content type="html"><![CDATA[<p>在使用Java Swing做程序时，使用MouseMotionListener的mousedragged鼠标事件，但拖动时，元素位置闪烁变化。
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/10"/><category term="bug"/><published>2023-03-21T06:33:45+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/9</id><title>Java mousedragged事件时控件闪烁</title><updated>2025-04-22T08:46:21.408794+00:00</updated><content type="html"><![CDATA[<p>在使用Java Swing做程序时，使用MouseMotionListener的mousedragged鼠标事件，但拖动时，元素位置闪烁变化。
 <img src="https://user-images.githubusercontent.com/68359161/226532997-45f88329-74f7-4ac4-a409-8576b51abbf1.png" alt="image" />
 输出了位置数值查看发现位置会往左上角“瞬移”。</p>
 <pre><code>import java.awt.event.MouseMotionListener;
@@ -338,7 +339,7 @@ public void mouseDragged(MouseEvent e) {
 }
 </code></pre>
 <p>修改后抖动的问题就没有了。</p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/9"/><category term="bug"/><published>2023-03-21T06:31:53+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/8</id><title>没猫病日志小程序</title><updated>2025-04-21T01:55:58.104526+00:00</updated><content type="html"><![CDATA[<h3>初期功能规划</h3>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/9"/><category term="bug"/><published>2023-03-21T06:31:53+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/8</id><title>没猫病日志小程序</title><updated>2025-04-22T08:46:21.528383+00:00</updated><content type="html"><![CDATA[<h3>初期功能规划</h3>
 <p>主要实现功能：日历式治疗记录
 后续可增加功能：猫饭食谱，营养记录，病情状况科普自查
 1、主体是日历模式的每日治疗记录：治疗日期记录（打针天数，最近一次打针日期及距今几天），治疗时间（时间段），针剂/片剂的用量（根据填写信息计算得出的用药量和实际的注射情况，如漏液补打），注射部位（希望可以实现猫型平面图选择部位），体重变化情况（根据填写的用药信息更新计算用药剂量），猫咪症状（漏液皮肤溃烂or呕吐拉稀等），其他备注（针对并发症的辅助用药）
@@ -354,7 +355,7 @@ public void mouseDragged(MouseEvent e) {
 <p><img src="https://user-images.githubusercontent.com/68359161/226530567-c3ae8a8d-e771-4540-b9b7-0d0047ac8ca3.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/68359161/226530665-727ba60f-329b-4483-bc52-eb1b8e802243.png" alt="image" />
 <img src="https://user-images.githubusercontent.com/68359161/226530705-f0b233a9-b4dd-45c5-8094-38f3b0be036e.png" alt="image" /></p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/8"/><category term="Top"/><category term="项目记录"/><published>2023-03-21T06:12:39+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/7</id><title>猫传腹日志小程序版本更新</title><updated>2025-04-21T01:55:58.280380+00:00</updated><content type="html"><![CDATA[<p>V1.0.3（2023.03.15）</p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/8"/><category term="Top"/><category term="项目记录"/><published>2023-03-21T06:12:39+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/7</id><title>猫传腹日志小程序版本更新</title><updated>2025-04-22T08:46:21.668848+00:00</updated><content type="html"><![CDATA[<p>V1.0.3（2023.03.15）</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> 优化各个数据设置交互和保存设置</li>
 <li><input checked="" disabled="" type="checkbox"> 限制未到日期的数据设置</li>
@@ -371,7 +372,7 @@ V1.0.5（2023.03.16）</li>
 <li><input checked="" disabled="" type="checkbox"> 首页增加下拉刷新功能</li>
 <li><input checked="" disabled="" type="checkbox"> UI修改</li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/7"/><category term="TODO"/><published>2023-03-21T03:37:27+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/6</id><title>重构个人博客网站</title><updated>2025-04-21T01:55:58.482953+00:00</updated><content type="html"><![CDATA[<ul>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/7"/><category term="TODO"/><published>2023-03-21T03:37:27+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/6</id><title>重构个人博客网站</title><updated>2025-04-22T08:46:21.801278+00:00</updated><content type="html"><![CDATA[<ul>
 <li>
 <p><input checked="" disabled="" type="checkbox"> 技术栈的选择</p>
 </li>
@@ -379,6 +380,6 @@ V1.0.5（2023.03.16）</li>
 <p><input checked="" disabled="" type="checkbox"> 对云开发的调研使用，是否用其做网站托管</p>
 </li>
 </ul>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/6"/><category term="TODO"/><published>2023-03-21T03:22:14+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/5</id><title>actions生成md文件异常</title><updated>2025-04-21T01:55:58.901328+00:00</updated><content type="html"><![CDATA[<p>测试</p>
-]]></content><link href="https://github.com/Smileye-v/gitblog/issues/5"/><category term="bug"/><published>2023-03-20T09:50:59+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/1</id><title>pip安装出现sslerror的问题</title><updated>2025-04-21T01:55:59.092971+00:00</updated><content type="html"><![CDATA[<p>pip install {安装包} -i <a href="http://pypi.douban.com/simple">http://pypi.douban.com/simple</a> --trusted-host pypi.douban.com</p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/6"/><category term="TODO"/><published>2023-03-21T03:22:14+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/5</id><title>actions生成md文件异常</title><updated>2025-04-22T08:46:21.933396+00:00</updated><content type="html"><![CDATA[<p>测试</p>
+]]></content><link href="https://github.com/Smileye-v/gitblog/issues/5"/><category term="bug"/><published>2023-03-20T09:50:59+00:00</published></entry><entry><id>https://github.com/Smileye-v/gitblog/issues/1</id><title>pip安装出现sslerror的问题</title><updated>2025-04-22T08:46:22.042809+00:00</updated><content type="html"><![CDATA[<p>pip install {安装包} -i <a href="http://pypi.douban.com/simple">http://pypi.douban.com/simple</a> --trusted-host pypi.douban.com</p>
 ]]></content><link href="https://github.com/Smileye-v/gitblog/issues/1"/><category term="技术笔记"/><published>2023-03-20T09:07:26+00:00</published></entry></feed>
