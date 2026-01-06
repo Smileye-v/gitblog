@@ -38,21 +38,18 @@ My personal blog([About Me](https://github.com/yihong0618/gitblog/issues/282)) u
 - [pip安装出现sslerror的问题](https://github.com/Smileye-v/gitblog/issues/1)--2023-03-20
 </details>
 
-## 播客收藏
-- [播客收藏](https://github.com/Smileye-v/gitblog/issues/19)--2023-05-19
 - [猫咪饮食记录](https://github.com/Smileye-v/gitblog/issues/29)--2025-04-21
 - [想买的东西](https://github.com/Smileye-v/gitblog/issues/23)--2024-02-24
 - [手工学习](https://github.com/Smileye-v/gitblog/issues/22)--2024-02-24
+## 播客收藏
+- [播客收藏](https://github.com/Smileye-v/gitblog/issues/19)--2023-05-19
 ## 项目记录
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## TODO
-TODO list from [前端知识学习](https://github.com/Smileye-v/gitblog/issues/21)--1 jobs to do--2 jobs done
-- [x] 调研目前流行的技术栈
-- [x] 熟用vue3
-- [ ] 学习ts+react+nextjs，能找到有趣的项目并用该技术栈去实现
+TODO list from [前端知识学习](https://github.com/Smileye-v/gitblog/issues/21) all done
 
-TODO list from [使用Notion整理笔记](https://github.com/Smileye-v/gitblog/issues/20)--4 jobs to do--0 jobs done
-- [ ] 熟悉Notion基本使用功能
+TODO list from [使用Notion整理笔记](https://github.com/Smileye-v/gitblog/issues/20)--3 jobs to do--1 jobs done
+- [x] 熟悉Notion基本使用功能
 - [ ] 使用Notion整理规划有道云笔记中的笔记
 - [ ] 记录猫咪科养学习笔记（豆瓣收藏、公众号文章收藏、医学书籍）
 - [ ] Notion整理规划笔记，blog存储在gitblog中，并同步到个人博客网站上
