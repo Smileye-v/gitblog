@@ -179,17 +179,22 @@ def add_md_firends(repo, md, me):
 
 
 def add_md_recent(repo, md, me, limit=5):
-    count = 0
     with open(md, "a+", encoding="utf-8") as md:
         # one the issue that only one issue and delete (pyGitHub raise an exception)
         try:
             md.write("## 最近更新\n")
+            # Get all issues, filter by me, deduplicate and sort
+            issues = []
+            seen_numbers = set()
             for issue in repo.get_issues():
-                if is_me(issue, me):
-                    add_issue_info(issue, md)
-                    count += 1
-                    if count >= limit:
-                        break
+                if is_me(issue, me) and issue.number not in seen_numbers:
+                    issues.append(issue)
+                    seen_numbers.add(issue.number)
+            # Sort by created_at in descending order (newest first)
+            issues = sorted(issues, key=lambda x: x.created_at, reverse=True)
+            # Only take the first 'limit' issues
+            for issue in issues[:limit]:
+                add_issue_info(issue, md)
         except Exception as e:
             print(str(e))
 
@@ -222,21 +227,25 @@ def add_md_label(repo, md, me):
                 continue
 
             issues = get_issues_from_label(repo, label)
-            if issues.totalCount:
+            # Filter issues that belong to current user
+            my_issues = [issue for issue in issues if is_me(issue, me)]
+            
+            # Only show label if there are issues belonging to current user
+            if my_issues:
                 md.write("## " + label.name + "\n")
-                issues = sorted(issues, key=lambda x: x.created_at, reverse=True)
-            i = 0
-            for issue in issues:
-                if not issue:
-                    continue
-                if is_me(issue, me):
+                # Sort by created_at in descending order (newest first)
+                my_issues = sorted(my_issues, key=lambda x: x.created_at, reverse=True)
+                i = 0
+                for issue in my_issues:
+                    if not issue:
+                        continue
                     if i == ANCHOR_NUMBER:
                         md.write("<details><summary>显示更多</summary>\n")
                         md.write("\n")
                     add_issue_info(issue, md)
                     i += 1
-            if i > ANCHOR_NUMBER:
-                md.write("</details>\n")
+                if i > ANCHOR_NUMBER:
+                    md.write("</details>\n")
                 md.write("\n")
 
 
