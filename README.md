@@ -4,6 +4,7 @@ My personal blog([About Me](https://github.com/yihong0618/gitblog/issues/282)) u
 [RSS Feed](https://raw.githubusercontent.com/Smileye-v/gitblog/master/feed.xml)
 
 ## 置顶文章
+- [猫咪饮食记录](https://github.com/Smileye-v/gitblog/issues/29)--2025-04-21
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## 最近更新
