@@ -13,8 +13,11 @@ My personal blog([About Me](https://github.com/Smileye-v)) using issues and GitH
 - [laf-cli命令行工具导出云存储报错](https://github.com/Smileye-v/gitblog/issues/28)--2025-04-15
 - [在本地使用 Git 对比两个文件夹的差异](https://github.com/Smileye-v/gitblog/issues/27)--2025-04-08
 - [React.FC详细解说](https://github.com/Smileye-v/gitblog/issues/25)--2025-02-12
+## 杂七杂八
 - [播客收藏](https://github.com/Smileye-v/gitblog/issues/19)--2023-05-19
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
+
+## bug
 - [laf-cli命令行工具导出云存储报错](https://github.com/Smileye-v/gitblog/issues/28)--2025-04-15
 - [点击事件在移动端真机测试无效](https://github.com/Smileye-v/gitblog/issues/24)--2024-04-30
 - [npm install出现Sorry, name can only contain URL-friendly characters.](https://github.com/Smileye-v/gitblog/issues/14)--2023-03-21
@@ -27,6 +30,7 @@ My personal blog([About Me](https://github.com/Smileye-v)) using issues and GitH
 - [actions生成md文件异常](https://github.com/Smileye-v/gitblog/issues/5)--2023-03-20
 </details>
 
+## 开发笔记
 - [建立全新个人网站](https://github.com/Smileye-v/gitblog/issues/30)--2026-01-06
 - [laf-cli命令行工具导出云存储报错](https://github.com/Smileye-v/gitblog/issues/28)--2025-04-15
 - [在本地使用 Git 对比两个文件夹的差异](https://github.com/Smileye-v/gitblog/issues/27)--2025-04-08
@@ -40,11 +44,14 @@ My personal blog([About Me](https://github.com/Smileye-v)) using issues and GitH
 - [pip安装出现sslerror的问题](https://github.com/Smileye-v/gitblog/issues/1)--2023-03-20
 </details>
 
+## 日常
 - [猫咪饮食记录](https://github.com/Smileye-v/gitblog/issues/29)--2025-04-21
 - [想买的东西](https://github.com/Smileye-v/gitblog/issues/23)--2024-02-24
 - [手工学习](https://github.com/Smileye-v/gitblog/issues/22)--2024-02-24
+
 ## 项目记录
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
+
 ## TODO
 TODO list from [前端知识学习](https://github.com/Smileye-v/gitblog/issues/21) all done
 
