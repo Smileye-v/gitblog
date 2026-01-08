@@ -4,11 +4,12 @@ My personal blog([About Me](https://github.com/Smileye-v)) using issues and GitH
 [RSS Feed](https://raw.githubusercontent.com/Smileye-v/gitblog/master/feed.xml)
 
 ## 置顶文章
+- [互联网资源收藏](https://github.com/Smileye-v/gitblog/issues/31)--2026-01-08
 - [猫咪饮食记录](https://github.com/Smileye-v/gitblog/issues/29)--2025-04-21
 - [网站收集](https://github.com/Smileye-v/gitblog/issues/17)--2023-03-28
 - [没猫病日志小程序](https://github.com/Smileye-v/gitblog/issues/8)--2023-03-21
 ## 最近更新
-- [建立全新个人网站](https://github.com/Smileye-v/gitblog/issues/30)--2026-01-06
+- [互联网资源收藏](https://github.com/Smileye-v/gitblog/issues/31)--2026-01-08
 - [猫咪饮食记录](https://github.com/Smileye-v/gitblog/issues/29)--2025-04-21
 - [laf-cli命令行工具导出云存储报错](https://github.com/Smileye-v/gitblog/issues/28)--2025-04-15
 - [在本地使用 Git 对比两个文件夹的差异](https://github.com/Smileye-v/gitblog/issues/27)--2025-04-08
@@ -31,14 +32,13 @@ My personal blog([About Me](https://github.com/Smileye-v)) using issues and GitH
 </details>
 
 ## 开发笔记
-- [建立全新个人网站](https://github.com/Smileye-v/gitblog/issues/30)--2026-01-06
 - [laf-cli命令行工具导出云存储报错](https://github.com/Smileye-v/gitblog/issues/28)--2025-04-15
 - [在本地使用 Git 对比两个文件夹的差异](https://github.com/Smileye-v/gitblog/issues/27)--2025-04-08
 - [React.FC详细解说](https://github.com/Smileye-v/gitblog/issues/25)--2025-02-12
 - [Chatgpt相关](https://github.com/Smileye-v/gitblog/issues/18)--2023-05-18
+- [微信小程序如何使用svg并动态修改颜色](https://github.com/Smileye-v/gitblog/issues/16)--2023-03-24
 <details><summary>显示更多</summary>
 
-- [微信小程序如何使用svg并动态修改颜色](https://github.com/Smileye-v/gitblog/issues/16)--2023-03-24
 - [python爬虫读取ins照片问题总结](https://github.com/Smileye-v/gitblog/issues/15)--2023-03-21
 - [Java JFileChooser保存文件](https://github.com/Smileye-v/gitblog/issues/11)--2023-03-21
 - [pip安装出现sslerror的问题](https://github.com/Smileye-v/gitblog/issues/1)--2023-03-20
